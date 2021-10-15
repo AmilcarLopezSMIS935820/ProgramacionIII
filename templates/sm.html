@@ -1,0 +1,50 @@
+{% extends "layout.html" %}<!--Instancia del bloque creado en layout-->
+
+{% block content %}
+<!--Comienza estructura base-->
+<h1 class="nh1" style="text-align: center;">Reseña histórica de San Miguel</h1>
+<div class="fpa justify-content-center col" style="display: block; margin: 10px;">    
+    <center><div class="row" style="padding: 15px;">
+        <!--Espacio de fotos-->    
+        <div class="col" style="background-color: rgb(47, 194, 162); padding: 5px; margin: 5px;">
+            <img class="imc" src="../static/img/sm1.png" alt="Catedral">    
+        </div>
+        <div class="col" style="background-color: rgb(124, 10, 153); padding: 5px; margin: 5px;">
+            <img class="imc" src="../static/img/sm2.png" alt="Ruinas">
+        </div>
+        <div class="col" style="background-color: rgb(0, 61, 130); padding: 5px; margin: 5px;">
+            <img class="imc" src="../static/img/sm3.png" alt="Playa">
+        </div>
+    </div></center>
+        
+    <!--Espacio de reseña historica-->    
+    <div class="col" style="padding: 15px;">
+        <p style="text-align: justify; margin: 10px;">
+            La historia de la conquista de este departamento, comenzó en el año 1525, cuando un grupo de 
+            soldados españoles, comandadas por Pedro Alvarado, remontó el río Paz y en vista de sus reiterados 
+            e infructuosos encuentros con los nativos, decide enviar a Luis de Moscoso con ciento veinte veinte 
+            hombres armados, quienes deciden fundar en ese lugar una villa. Esta fecha coincide con el día de la 
+            celebración de San Miguel Arcángel, y esto originó el nombre del departamento. Inicialmente San 
+            Miguel era considera toda la zona oriente de El Salvador, pero fue dividido en 1800 en  4 departamentos, 
+            estos son Morazán, la Unión, Usulután y San Miguel.     
+        </p>
+        <p style="text-align: justify; margin: 10px;">
+            San Miguel fue declarado como departamento el día 12 de junio de 1824 durante la gestión presidencial de 
+            Mariano Prado Baca. Este territorio en sus inicios, antes de la llegada de los españoles, estaba ocupado 
+            por los Lencas, que eran los aborígenes que tuvieron que enfrentarse a los conquistadores españoles al 
+            mando del capitán Luis de Moscoso, a quien se le atribuye su fundación hacia el  año de 1530.
+            Ya para el año de 1890 se había logrado aumentar la población. Así mismo, sus calles ya se habían 
+            restablecido en gran parte, se reestructuraron anchas y empedradas, su economía también se restauró y se 
+            basó principalmente en la cosecha de cereales y en la cría de ganado. Para el año 1973,  el departamento de 
+            San Miguel contaba con servicios de agua potable y luz eléctrica. Así como también se restauraron los 
+            servicios telegráficos. A partir del año 2000 cuenta con la circulación del dólar y la instalación de varias 
+            empresas transnacionales que le han dado al país un gran impulso económico.
+        </p>
+        <p style="text-align: justify; margin: 10px;">
+            Entre las personalidades más destacadas de este departamento, se encuentran el Capitán General Miguel Santín 
+            del Castillo, y el Capitán General Gerardo Barrios, quienes colaboraron activamente con el desarrollo de 
+            éste departamento, fomentando el cultivo del café y la educación.
+        </p>
+    </div>
+</div>
+{% endblock %}

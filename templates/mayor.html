@@ -1,0 +1,33 @@
+{% extends "layout.html" %} <!--Instancia del bloque creado en layout-->
+
+{% block content %}
+<!--Comienza estructura base-->
+<center>
+    <h1 class="nh1">Número Mayor</h1>
+<div class="fpa justify-content-center col-8">    
+    <div class="col-5" style="padding: 15px;">
+        <img src="../static/img/m1.png" alt="programador" style="width: 100%; height: auto;">
+    </div>
+        
+    <div class="col" style="padding: 15px;">
+    <!--Formulario para evaluar el número mayor-->
+        <form action="{{ url_for('resultado') }}" method="post">
+            <div class="col" style="margin: 15px; text-align: justify;">
+                <label for="n1" class="labelc"> Primer número</label>
+                <input type="number" autofocus id="n1" name='n1' class="form-control" placeholder="Ingrese un numero" required>
+            </div>
+            <div class="col" style="margin: 15px; text-align: justify;">
+                <label for="n1" class="labelc"> Segundo número</label>
+                <input type="number"  id="n2" name='n2' class="form-control" placeholder="Ingrese un numero" required>
+            </div>  
+        
+            <button type="submit" class="btn-primary btncal">Evaluar</button>
+            <br>
+            {{text}} {{mayor}} 
+         </form>
+    </div>
+
+</div>  
+</center>
+<br>
+{% endblock %}
